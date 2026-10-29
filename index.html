@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficación 3D - Premium</title>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden; 
+            background-color: #111111; /* Mismo fondo que en el JS */
+        }
+        canvas { 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <!-- MAPA DE IMPORTACIÓN (Obligatorio para usar OrbitControls) -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.154.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <!-- Tu script principal -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
